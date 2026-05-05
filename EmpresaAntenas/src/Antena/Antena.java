@@ -1,4 +1,4 @@
-package Antena;
+package antena;
 
 public abstract class Antena {
     protected String nome;

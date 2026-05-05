@@ -1,5 +1,5 @@
-package Produto;
-//PEnsar em tirar caso nao usar
+package produto;
+//Pensar em tirar caso nao usar
 public class NovaAntena extends Produto {
 
     private double frequencia;
@@ -12,11 +12,19 @@ public class NovaAntena extends Produto {
         this.digital = digital;
     }
 
+    public double getFrequencia() {
+        return frequencia;
+    }
+
+    public boolean isDigital() {
+        return digital;
+    }
+
     @Override
     public void exibirDetalhes() {
-        System.out.println("Antena.Antenas.Antena.Antena: " + nome);
-        System.out.println("Frequência: " + frequencia);
-        System.out.println("Tipo: " + (digital ? "Digital" : "Analógica"));
+        System.out.println("Antena: " + nome);
+        System.out.println("Frequência: " + getFrequencia());
+        System.out.println("Tipo: " + (isDigital() ? "Digital" : "Analógica"));
     }
 }
 

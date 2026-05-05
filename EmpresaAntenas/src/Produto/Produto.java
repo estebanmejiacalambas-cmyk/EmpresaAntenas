@@ -1,4 +1,4 @@
-package Produto;
+package produto;
 
 abstract class Produto {
 
@@ -13,6 +13,26 @@ abstract class Produto {
         this.nome = nome;
         this.preco = preco;
         this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQuantidadeEstoque() {
+        return quantidadeEstoque;
+    }
+
+    public String getCategoria() {
+        return categoria;
     }
 
     public void adicionarEstoque(int quantidade) {
