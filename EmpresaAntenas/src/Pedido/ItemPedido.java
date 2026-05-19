@@ -1,6 +1,6 @@
-package Pedido;
+package pedido;
 
-import Produto.Produto;
+import produto.Produto;
 
 public class ItemPedido {
 

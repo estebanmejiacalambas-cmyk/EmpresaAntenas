@@ -1,6 +1,6 @@
-package Encomenda;
+package encomenda;
 
-import Produto.Produto;
+import produto.Produto;
 
 public class NovaAntena extends Produto {
 

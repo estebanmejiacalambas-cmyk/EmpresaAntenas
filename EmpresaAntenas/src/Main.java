@@ -1,6 +1,6 @@
-import Estoque.Estoque;
-import Produto.Antena.Antenas.*;
-import Sistema.SistemaAntenas;
+import estoque.Estoque;
+import produto.antena.antenas.*;
+import sistema.SistemaAntenas;
 
 public class Main {
 

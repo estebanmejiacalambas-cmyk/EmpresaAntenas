@@ -1,9 +1,9 @@
-package Sistema;
-import Encomenda.NovaAntena;
-import Estoque.Estoque;
-import Pedido.ItemPedido;
-import Pedido.Pedido;
-import Produto.Produto;
+package sistema;
+import encomenda.NovaAntena;
+import estoque.Estoque;
+import pedido.ItemPedido;
+import pedido.Pedido;
+import produto.Produto;
 import java.util.Scanner;
 
 //Dividir em varias classes

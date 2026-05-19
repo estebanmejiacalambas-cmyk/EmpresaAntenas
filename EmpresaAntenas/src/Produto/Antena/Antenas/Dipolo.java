@@ -1,4 +1,6 @@
-package Produto.Antena.Antenas;
+package produto.antena.antenas;
+
+import produto.antena.Antena;
 
 public class Dipolo extends Monopolo {
 

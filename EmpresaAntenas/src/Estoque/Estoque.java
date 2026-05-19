@@ -1,7 +1,7 @@
-package Estoque;
+package estoque;
 
-import Produto.Produto;
-import Encomenda.NovaAntena;
+import produto.Produto;
+import encomenda.NovaAntena;
 import java.util.ArrayList;
 import java.util.List;
 
