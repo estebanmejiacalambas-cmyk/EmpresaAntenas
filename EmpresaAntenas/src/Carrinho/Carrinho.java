@@ -1,11 +1,11 @@
-package Carrinho;
+package carrinho;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Carrinho {
 
-    private static int contadorId = 1;
+    private static int contadorId = arquivo.GerenciadorArquivo.lerProximoId();
     private int id;
     private String nomeCliente;
     private List<Encomenda> encomendas;
@@ -57,7 +57,7 @@ public class Carrinho {
         System.out.println("ID     : " + id);
         System.out.println("Cliente: " + nomeCliente);
 
-        if (estaVazio() == false) {
+        if (!estaVazio()) {
             System.out.println("\nItens:");
             for (int i = 0; i < encomendas.size(); i++) {
                 encomendas.get(i).exibirDetalhes();

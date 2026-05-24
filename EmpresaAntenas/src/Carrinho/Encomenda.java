@@ -1,6 +1,6 @@
-package Carrinho;
+package carrinho;
 
-import Produto.Antena.Antena;
+import produto.antena.Antena;
 
 public class Encomenda {
 

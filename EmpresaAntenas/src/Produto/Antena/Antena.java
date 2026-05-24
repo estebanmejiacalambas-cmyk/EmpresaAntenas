@@ -1,6 +1,6 @@
-package Produto.Antena;
+package produto.antena;
 
-import Produto.Produto;
+import produto.Produto;
 
 public abstract class Antena extends Produto {
 

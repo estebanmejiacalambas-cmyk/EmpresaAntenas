@@ -1,9 +1,0 @@
-RECIBO
-ID     : 1
-Cliente: auron
-
-Itens:
-  - Corneta Ku 12GHzQtd: 3 | R$ 1049,70
-Obs: nada dms
-Status: Aguardando...
-Total: R$ 1049,70

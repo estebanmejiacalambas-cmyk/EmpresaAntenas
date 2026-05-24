@@ -1,6 +1,6 @@
-import Estoque.Estoque;
-import Estoque.MonitorEstoque;
-import Menu.Menu;
+import estoque.Estoque;
+import estoque.MonitorEstoque;
+import menu.Menu;
 
 public class Main {
 
@@ -8,12 +8,14 @@ public class Main {
 
         Menu menu = new Menu();
         menu.inicializar();
-        MonitorEstoque monitor = new MonitorEstoque(menu.getEstoque());
+        menu.apresentacao();
+
+        Estoque estoque = menu.getEstoque();
+        MonitorEstoque monitor = new MonitorEstoque(estoque);
         Thread threadMonitor = new Thread(monitor);
         threadMonitor.setDaemon(true);
         threadMonitor.start();
 
-        menu.apresentacao();
         menu.cadastro();
         menu.compra();
     }

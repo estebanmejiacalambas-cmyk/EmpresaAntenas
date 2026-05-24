@@ -1,8 +1,8 @@
-package Estoque;
+package estoque;
 
-import Carrinho.Encomenda;
-import Produto.Antena.Antena;
-import Produto.Produto;
+import produto.antena.Antena;
+import carrinho.Encomenda;
+import produto.Produto;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,8 +46,7 @@ public class Estoque {
     }
 
     public void listarCatalogo() {
-        if (catalogo.size() == 0) {
-            System.out.println("Catálogo vazio.");
+        if (catalogo.isEmpty()) {
             return;
         }
         System.out.println("\nCATÁLOGO:");
@@ -58,7 +57,7 @@ public class Estoque {
     }
 
     public void listarEncomendas() {
-        if (encomendas.size() == 0) {
+        if (encomendas.isEmpty()) {
             System.out.println("Nenhuma encomenda registrada.");
             return;
         }

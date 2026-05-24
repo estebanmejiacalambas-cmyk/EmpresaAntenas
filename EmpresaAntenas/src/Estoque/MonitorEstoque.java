@@ -1,18 +1,21 @@
-package Estoque;
+package estoque;
 
-import Produto.Produto;
+import produto.Produto;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MonitorEstoque implements Runnable {
 
-    private static final int ESTOQUE_MINIMO   = 5;
-    private static final int INTERVALO_MS     = 40000; // verifica a cada 5 segundos
+    private static final int ESTOQUE_MINIMO = 5;
+    private static final int INTERVALO_MS   = 40000; // verifica a cada 40 segundos
 
     private Estoque estoque;
     private boolean rodando;
+    private Map<String, Integer> ultimoEstoque = new HashMap<>();
 
     public MonitorEstoque(Estoque estoque) {
-        this.estoque  = estoque;
-        this.rodando  = true;
+        this.estoque = estoque;
+        this.rodando = true;
     }
 
     @Override
@@ -35,18 +38,22 @@ public class MonitorEstoque implements Runnable {
         boolean alertaEmitido = false;
 
         for (Produto produto : estoque.getCatalogo()) {
-            if (produto.getQuantidadeEstoque() <= ESTOQUE_MINIMO) {
+            int qtd = produto.getQuantidadeEstoque();
+            Integer anterior = ultimoEstoque.get(produto.getCodigo());
+
+            boolean estoqueBaixo = qtd <= ESTOQUE_MINIMO;
+            boolean mudou = anterior == null || anterior != qtd;
+
+            if (estoqueBaixo && mudou) {
                 if (!alertaEmitido) {
                     System.out.println("\n[Monitor] *** ALERTA DE ESTOQUE BAIXO ***");
                     alertaEmitido = true;
                 }
                 System.out.println("[Monitor] " + produto.getNome()
-                        + " — apenas " + produto.getQuantidadeEstoque() + " unidades restantes!");
+                        + " — apenas " + qtd + " unidades restantes!");
             }
-        }
 
-        if (!alertaEmitido) {
-            System.out.println("[Monitor] Estoque OK — nenhuma antena em nível crítico.");
+            ultimoEstoque.put(produto.getCodigo(), qtd);
         }
     }
 
