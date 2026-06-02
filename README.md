@@ -16,9 +16,7 @@ Prof. Christopher Lima
 Sistema de vendas de antenas desenvolvido em Java. O cliente visualiza o catálogo, seleciona produtos, configura antenas direcionais, monta um carrinho e finaliza a compra. O recibo é exibido no terminal e salvo em arquivo. Um monitor de estoque roda em segundo plano alertando sobre produtos com baixo estoque.
 
 ## Diagrama UML
-//////////////////////////
-Disponível no arquivo `uml.png` na raiz do repositório.
-//////////////////////////
+Disponível no arquivo `uml.pdf` na raiz do repositório.
 ## Uso de Inteligência Artificial
 
 Sim, utilizamos IA no desenvolvimento deste projeto.
