@@ -1,0 +1,12 @@
+RECIBO
+ID     : 1
+Cliente: henrique
+
+Itens:
+  - Yagi UHF 7 elementosQtd: 3 | R$ 659,70
+Obs:  netflix pirata
+Status: Atendida
+  - Corneta Ku 12GHzQtd: 5 | R$ 1749,50
+Obs: contrabandear
+Status: Atendida
+Total: R$ 2409,20
