@@ -17,16 +17,69 @@ Sistema de vendas de antenas desenvolvido em Java. O cliente visualiza o catálo
 
 ## Diagrama UML
 Disponível no arquivo `uml.pdf` na raiz do repositório.
+
 ## Uso de Inteligência Artificial
 
-Sim, utilizamos IA no desenvolvimento deste projeto.
+Sim, utilizamos ferramentas de Inteligência Artificial durante o desenvolvimento deste projeto.
 
-**Ferramentas:** ChatGPT (OpenAI) e Claude (Anthropic)
+**Ferramentas utilizadas:** ChatGPT (OpenAI) e Claude (Anthropic).
 
-**Como foi utilizada:**
-- Auxílio na implementação de partes específicas do código: Collections API, tratamento de exceções, manipulação de arquivos e threads
-- Consultas sobre decisões de design, como avaliar se era necessário criar uma classe separada `NovaAntena`
-- Apoio na escrita deste README
+### Como a IA foi utilizada
+
+As ferramentas de IA foram empregadas principalmente como apoio ao aprendizado, à implementação de funcionalidades específicas e à tomada de decisões durante o desenvolvimento do projeto.
+
+#### Implementação e suporte técnico
+
+Grande parte das consultas realizadas envolveu dúvidas relacionadas à implementação de funcionalidades utilizando os conteúdos abordados em sala de aula. Para isso, eram fornecidos à IA:
+
+* O contexto e os objetivos do projeto;
+* Trechos do código-fonte já desenvolvidos;
+* Slides e materiais disponibilizados pelo professor;
+* Requisitos e restrições definidos para o trabalho.
+
+Frequentemente eram utilizados prompts como:
+
+> "Tendo em vista esta ideia de projeto..."
+> "Baseie-se exclusivamente no conteúdo presente nestes slides..."
+> "Gostaria de ajuda para implementar esta funcionalidade..."
+
+A IA foi utilizada principalmente para auxiliar em tópicos nos quais houve maior dificuldade de implementação, como:
+
+* Collections API;
+* Tratamento de exceções;
+* Manipulação de arquivos;
+* Threads.
+
+Após receber uma solução considerada satisfatória, era comum solicitar uma explicação detalhada do código gerado, incluindo comentários e descrições linha por linha, com o objetivo de compreender o funcionamento da implementação e não apenas utilizá-la.
+
+#### Correção de erros e depuração
+
+Outra utilização importante foi no processo de identificação e correção de erros.
+
+Quando surgiam problemas cujo motivo não era facilmente identificado, eram enviados à IA os trechos relevantes do código juntamente com uma descrição detalhada do comportamento observado. Além de localizar a causa do problema, a IA também era solicitada a propor soluções que exigissem o menor número possível de alterações na estrutura já existente.
+
+Essa preocupação era constantemente reforçada nos prompts, pois alterações excessivas poderiam introduzir novos erros ou comprometer partes do sistema que já estavam funcionando corretamente.
+
+#### Apoio em decisões de design
+
+A IA também foi utilizada como ferramenta de apoio para decisões de design e arquitetura do software.
+
+Nesses casos, eram fornecidos:
+
+* Os slides e materiais das aulas;
+* O documento contendo os requisitos do projeto;
+* As ideias e alternativas inicialmente consideradas pela equipe.
+
+A partir dessas informações, a IA auxiliava na análise das diferentes opções, sugerindo vantagens, desvantagens e, em alguns casos, apresentando alternativas adicionais. Um exemplo desse tipo de consulta foi a avaliação sobre a necessidade de criar uma classe específica (`NovaAntena`) para representar determinadas funcionalidades do sistema.
+
+As recomendações recebidas serviram como apoio para a tomada de decisões mais fundamentadas durante o desenvolvimento.
+
+#### Apoio na documentação
+
+Por fim, a IA foi utilizada para auxiliar na elaboração e organização deste README.
+
+Inicialmente, foi fornecido à ferramenta o documento de avaliação do projeto para que ela gerasse uma estrutura inicial da documentação. Posteriormente, o conteúdo produzido foi revisado, ajustado e complementado manualmente, de modo a refletir com maior precisão as características do projeto e atender às expectativas da equipe.
+
 
 ## 🏗️ Estrutura do Projeto
 
